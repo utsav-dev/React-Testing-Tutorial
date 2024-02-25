@@ -15,6 +15,8 @@ describe('Counter', () => {
     expect(setButton).toBeInTheDocument()
   })
 
+
+  //#Utsav Pointer/mouse Events
   test('renders a count of 0', () => {
     render(<Counter />)
     const countElement = screen.getByRole('heading')
@@ -40,6 +42,8 @@ describe('Counter', () => {
     expect(countElement).toHaveTextContent('2')
   })
 
+
+  //#Utsav Keyboard Events
   test('rendres a count of 10 after clicking the set button', async () => {
     user.setup()
     render(<Counter />)
